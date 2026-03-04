@@ -1,97 +1,92 @@
 # Velvet Ecosystem
 
-Velvet is a modular, offline-first AI system designed for embedded environments.
+Velvet is a modular, offline-first AI architecture designed for embedded environments.
 
 This organization hosts the public infrastructure layers of the Velvet project.
 
-Velvet is built around a simple principle:
+Velvet was originally developed in the vehicle domain, where local intelligence, hardware integration, and deterministic behavior matter most. Vehicles impose strict constraints: unreliable connectivity, safety boundaries, real-time systems, and regulatory expectations.
+
+Because of that environment, Velvet was designed from the beginning to operate locally, predictably, and transparently.
+
+The core principle behind Velvet is simple:
 
 > Intelligence should be modular, inspectable, and owned — not rented.
 
 ---
 
-## 🧠 What Exists Today (Alpha)
+## 🧠 Current Components (Alpha)
 
 ### velvet-ai-core
-The runtime spine of Velvet.
 
-- Modular Python framework
+The runtime spine of the Velvet system.
+
+Features:
+
+- Modular Python runtime framework
 - Event-driven architecture
 - Hot-swappable module model
-- Interface contracts
-- Security and boundary documentation
-- Zero external runtime dependencies (stdlib)
+- Interface contracts between subsystems
+- Boundary-aware architecture documentation
+- Zero external runtime dependencies (Python stdlib only)
 
-This is infrastructure, not a finished AI product.
+This repository provides architectural infrastructure, not a finished AI product.
 
 ---
 
-### velvet-vehicle-can (in progress)
-Learning-aware CAN bus subsystem.
+### velvet-vehicle-can
 
-- CAN backend
-- Dialect learning
-- Vehicle fingerprinting
-- Profile modeling
-- Qualification gate
+Vehicle communication and diagnostics layer for Velvet.
 
-Designed for embedded Linux and automotive environments.
+Capabilities under development:
+
+- CAN bus backend interface
+- Vehicle dialect learning
+- ECU fingerprinting
+- Vehicle profile modeling
+- Qualification and safety gating
+
+This subsystem is designed for embedded Linux and automotive environments and serves as the bridge between Velvet and vehicle hardware.
 
 ---
 
 ## 🧩 Design Principles
 
-Velvet is:
+Velvet is built to be:
 
 - Offline-first
-- Modular
-- Governance-aware
+- Modular by design
 - Boundary-driven
-- Designed for long-term stability
+- Inspectable and auditable
+- Governance-aware
+
+Velvet intentionally avoids the typical cloud-AI architecture model.
 
 Velvet is not:
 
 - A chatbot wrapper
-- A SaaS platform
+- A SaaS AI service
 - A cloud-dependent runtime
-- A finished OS (yet)
+- A packaged consumer AI product
+
+Velvet is infrastructure for long-lived intelligent systems.
 
 ---
 
 ## 🛠 Intended Direction
 
-The Velvet ecosystem will expand to include:
+Over time the Velvet ecosystem will expand to include:
 
-- AGL integration layer
-- HMI surface (Qt-based)
-- Governance and execution control layers
-- Deterministic logging and replay
+- Automotive Grade Linux (AGL) integration
+- Human-machine interface layers (Qt-based)
+- Governance and execution control systems
+- Deterministic logging and replay infrastructure
 - Embedded hardware integration
+- Mobile and home system surfaces
 
-Public releases will remain incremental and architectural.
+Public releases will remain incremental, architectural, and transparent.
 
 ---
 
 ## 📜 License
 
-Core components are released under **GPLv3**.
-
-Future components may adopt different licenses as the ecosystem evolves.
-
----
-
-## 🚧 Status
-
-This is an early alpha foundation release.
-
-Expect:
-- Breaking changes
-- API evolution
-- Rapid architectural refinement
-
-Contributions and thoughtful discussion are welcome.
-
----
-
-Velvet is infrastructure first.
-Intelligence comes after structure.
+Core infrastructure components are released under GPLv3
