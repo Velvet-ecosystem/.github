@@ -49,6 +49,18 @@ This subsystem is designed for embedded Linux and automotive environments and se
 
 ---
 
+### velvet-interface
+
+Multi-surface interface framework for Velvet.
+
+- YAML-defined scenes
+- Polygon interaction regions
+- Automatic scaling
+- Scene transitions
+- Neutral demos for desktop, automotive, mobile, industrial, and robotics
+  
+---
+
 ## 🧩 Design Principles
 
 Velvet is built to be:
