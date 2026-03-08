@@ -1,6 +1,6 @@
-# Velvet Ecosystem
+# Velvet AI Ecosystem
 
-Velvet is a modular, offline-first AI architecture designed for embedded environments.
+Offline-first AI architecture for vehicles, embedded systems, and autonomous environments.
 
 This organization hosts the public infrastructure layers of the Velvet project.
 
@@ -14,51 +14,57 @@ The core principle behind Velvet is simple:
 
 ---
 
-## 🧠 Current Components (Alpha)
+## Core Architecture
+
+Velvet is composed of several core infrastructure layers.
 
 ### velvet-ai-core
+Runtime spine of the Velvet AI system.
 
-The runtime spine of the Velvet system.
+Event-driven orchestration, module lifecycle management, and the core intelligence loop.
 
-Features:
-
-- Modular Python runtime framework
-- Event-driven architecture
-- Hot-swappable module model
-- Interface contracts between subsystems
-- Boundary-aware architecture documentation
-- Zero external runtime dependencies (Python stdlib only)
-
-This repository provides architectural infrastructure, not a finished AI product.
+https://github.com/Velvet-ecosystem/velvet-ai-core
 
 ---
 
 ### velvet-vehicle-can
+Vehicle communication layer.
 
-Vehicle communication and diagnostics layer for Velvet.
+Provides CAN bus communication, signal discovery, and vehicle telemetry access.
 
-Capabilities under development:
-
-- CAN bus backend interface
-- Vehicle dialect learning
-- ECU fingerprinting
-- Vehicle profile modeling
-- Qualification and safety gating
-
-This subsystem is designed for embedded Linux and automotive environments and serves as the bridge between Velvet and vehicle hardware.
+https://github.com/Velvet-ecosystem/velvet-vehicle-can
 
 ---
 
 ### velvet-interface
+Multi-surface scene framework for embedded interfaces.
 
-Multi-surface interface framework for Velvet.
+Designed for vehicles, robotics dashboards, mobile devices, and industrial HMIs.
 
-- YAML-defined scenes
-- Polygon interaction regions
-- Automatic scaling
-- Scene transitions
-- Neutral demos for desktop, automotive, mobile, industrial, and robotics
-  
+https://github.com/Velvet-ecosystem/velvet-interface
+
+---
+
+## System Flow
+
+Velvet is structured as a layered intelligence system.
+
+Velvet separates **interface**, **intelligence**, and **hardware control** into independent layers.
+
+User / Driver / Operator
+        │
+        ▼
+  velvet-interface
+        │
+        ▼
+    velvet-ai-core
+        │
+        ▼
+  velvet-vehicle-can
+        │
+        ▼
+Vehicle Systems / Sensors / Hardware
+
 ---
 
 ## 🧩 Design Principles
