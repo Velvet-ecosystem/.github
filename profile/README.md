@@ -115,7 +115,8 @@ Core infrastructure components are released under GPLv3
 
 
 
+---
 
-Velvet does not forget.Every decition, every action, every state can be traced, inspected, and understood.
+> Velvet does not forget. Every decition, every action, every state can be traced, inspected, and understood.
 If intelligence exists inside the machine, it cannot hide behind the cloud.
 Velvet makes that visible.
