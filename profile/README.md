@@ -4,21 +4,23 @@ Offline-first AI architecture for vehicles, embedded systems, and autonomous env
 
 This organization hosts the public infrastructure layers of the Velvet project.
 
+Velvet is not a chatbot, Velvet is an OS-level intelligence sytem that lives inside machines.
+
 Velvet was originally developed in the vehicle domain, where local intelligence, hardware integration, and deterministic behavior matter most. Vehicles impose strict constraints: unreliable connectivity, safety boundaries, real-time systems, and regulatory expectations.
 
 Because of that environment, Velvet was designed from the beginning to operate locally, predictably, and transparently.
 
 The core principle behind Velvet is simple:
 
-> Intelligence should be modular, inspectable, and owned — not rented.
-
+> Intelligence must be modular, inspectable, and owned — not rented.
+> Velvet is a modular, offline-first intelligence system designed to live inside machines - not behind APIs
 ---
 
 ## Core Architecture
 
 Velvet is composed of several core infrastructure layers.
 
-### velvet-ai-core
+### velvet-ai-core - Runtime Spine
 Runtime spine of the Velvet AI system.
 
 Event-driven orchestration, module lifecycle management, and the core intelligence loop.
@@ -28,7 +30,7 @@ https://github.com/Velvet-ecosystem/velvet-ai-core
 ---
 
 ### velvet-vehicle-can
-Vehicle communication layer.
+Real-time vehicle communication layer.
 
 Provides CAN bus communication, signal discovery, and vehicle telemetry access.
 
@@ -37,9 +39,9 @@ https://github.com/Velvet-ecosystem/velvet-vehicle-can
 ---
 
 ### velvet-interface
-Multi-surface scene framework for embedded interfaces.
+Unified Multi-surface scene framework for embedded interfaces.
 
-Designed for vehicles, robotics dashboards, mobile devices, and industrial HMIs.
+Designed for vehicles, robotics dashboards, mobile devices, Embedded systems and industrial HMIs.
 
 https://github.com/Velvet-ecosystem/velvet-interface
 
@@ -108,3 +110,12 @@ Public releases will remain incremental, architectural, and transparent.
 ## 📜 License
 
 Core infrastructure components are released under GPLv3
+
+
+
+
+
+
+Velvet does not forget.Every decition, every action, every state can be traced, inspected, and understood.
+If intelligence exists inside the machine, it cannot hide behind the cloud.
+Velvet makes that visible.
