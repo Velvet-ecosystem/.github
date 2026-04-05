@@ -47,6 +47,16 @@ https://github.com/Velvet-ecosystem/velvet-interface
 
 ---
 
+### velvet-receipts
+
+Tamper-evident memory ledger for Velvet AI.
+
+Provides hash-chained, policy-bound decision receipts for auditability, accountability, and long-term system coherence.
+
+https://github.com/Velvet-ecosystem/velvet-receipts
+
+---
+
 ## System Flow
 
 Velvet is structured as a layered intelligence system.
