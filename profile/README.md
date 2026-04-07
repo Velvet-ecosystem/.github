@@ -57,6 +57,23 @@ https://github.com/Velvet-ecosystem/velvet-receipts
 
 ---
 
+## velvet-event-protocol
+
+Enforcement layer for event-driven actuation in the Velvet ecosystem.
+
+Ensures that no action is executed without:
+- a valid receipt
+- proper authorization
+- policy compliance
+
+Acts as the execution boundary between decision and real-world actuation.
+
+Depends on: velvet-receipts >= v1.0.0
+
+https://github.com/Velvet-ecosystem/velvet-event-protocol
+
+---
+
 ## System Flow
 
 Velvet is structured as a layered intelligence system.
