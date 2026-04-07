@@ -59,16 +59,32 @@ https://github.com/Velvet-ecosystem/velvet-receipts
 
 ## velvet-event-protocol
 
-Enforcement layer for event-driven actuation in the Velvet ecosystem.
+Execution boundary and enforcement layer for all actuation in the Velvet ecosystem.
 
-Ensures that no action is executed without:
-- a valid receipt
-- proper authorization
-- policy compliance
+This module ensures that no action reaches hardware without passing through governance.
 
-Acts as the execution boundary between decision and real-world actuation.
+Every event must satisfy:
 
-Depends on: velvet-receipts >= v1.0.0
+• A valid, hash-linked receipt (velvet-receipts)
+• Explicit authorization from Core
+• Policy compliance validation
+• Capability token verification (scope, TTL, nonce)
+
+The protocol defines the canonical event lifecycle:
+
+observe → classify → authorize → validate → execute → receipt
+
+It acts as the hard separation between:
+
+• Intelligence (decision-making)
+• Execution (real-world actuation)
+
+No module, agent, or external system can bypass this layer.
+
+If an action cannot be explained, validated, and receipted — it does not occur.
+
+Dependencies:
+velvet-receipts >= v1.0.0
 
 https://github.com/Velvet-ecosystem/velvet-event-protocol
 
