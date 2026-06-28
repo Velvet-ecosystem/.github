@@ -8,6 +8,11 @@ The Velvet ecosystem welcomes outside ideas, research, fixes, documentation, exp
 
 New reusable modules and substantial module rewrites must pass through the Velvet Module Lab before official promotion.
 
+The public pathway and request form are maintained in `Velvet-ecosystem/velvet-docs`:
+
+- `docs/contributing/module_lab_pathway.md`
+- **Module Lab Request** issue form
+
 The Module Lab provides:
 
 - source and authorship tracking
@@ -21,7 +26,7 @@ This protects ecosystem safety and quality while giving contributors a clear pat
 
 A merge into the lab means accepted for assessment and testing. It does not mean production-ready, officially promoted, or authorized for active control.
 
-The full module-lab process is maintained in the private `Velvet-ecosystem/Modules` repository while the qualification system is being established.
+The qualification workspace remains private in `Velvet-ecosystem/Modules` while the system is being established. Contributors begin through the public request pathway rather than by requesting access to the private lab.
 
 ## Repository-specific changes
 
