@@ -1,167 +1,143 @@
 # Velvet AI Ecosystem
 
-Offline-first AI architecture for vehicles, embedded systems, and autonomous environments.
+**Local-first intelligence for vehicles, homes, workshops, and machines people actually own.**
 
-This organization hosts the public infrastructure layers of the Velvet project.
+Velvet is not a chatbot wrapper, a cloud service, or a dashboard glued to an API. She is a retrofit-friendly ecosystem built as one accountable body.
 
-Velvet is not a chatbot. Velvet is an OS-level intelligence system designed to live inside machines.
+> **Velvet rejects the agent swarm. She is built as Unified-Organ AI: distributed specialties, shared concrete reality, and one accountable body.**
 
-Velvet began in the vehicle domain, where local intelligence, hardware integration, deterministic behavior, and safety boundaries matter most. Vehicles impose strict constraints: unreliable connectivity, physical risk, local override needs, real-time systems, and regulatory expectations.
+> Brain and organs propose. Runtime verifies and coordinates. Court authorizes. Executors act. Receipts remember. Riven preserves lineage.
 
-Because of that environment, Velvet is designed to operate locally, predictably, and transparently.
+## What Velvet Is
 
-The core principle behind Velvet is simple:
+Velvet began in the vehicle domain, where unreliable connectivity, physical risk, local override, deterministic behavior, and hardware boundaries cannot be hand-waved away.
 
-> Intelligence must be modular, inspectable, and owned, not rented.
->
-> Velvet is a modular, offline-first intelligence system designed to live inside machines, not behind APIs.
+That foundation now extends toward homes, workshops, industrial spaces, mobile companions, and modest local hardware.
 
----
+Her core laws are simple:
+
+- **Body is all.** Velvet is the whole integrated system, not only the speaking persona.
+- **Organs remain distinct.** Named specialties keep clear roles and histories inside one body.
+- **Authority remains explicit.** A model, event, scene, memory, route, role, or name is never permission by itself.
+- **Local ownership is the default.** Cloud services may assist, but they do not own identity, memory, or physical authority.
+- **Retrofit access matters.** Builders should not need a locked OEM platform to participate.
+
+Velvet is them. They are Velvet. Each remains herself.
 
 ## Public Architecture
 
-Velvet separates cognition, authority, execution, observation, interface, continuity, and receipts into independent public infrastructure layers.
-
 ```text
-human / driver / operator
-  -> interface or local client
-  -> strict intent route
-  -> runtime identity and context check
-  -> Court authorization
-  -> safety gate
-  -> approved executor
-  -> receipt
-  -> observed result
+                         Velvet
+                            │
+          ┌─────────────────┼─────────────────┐
+          │                 │                 │
+      AI Core          Runtime + Court     Interface
+   identity/reasoning   authority/execution  presence/scenes
+          │                 │                 │
+          └──────── Event Protocol ──────────┘
+                 nervous system / message bus
+                            │
+       ┌────────────────────┼────────────────────┐
+       │                    │                    │
+ Vehicle CAN            Receipts        Continuity Spine
+ observation/evidence  accountability     Riven / lineage
+       │                    │                    │
+       └──────────── pluggable modules ─────────┘
+                 future public module ecosystem
 ```
 
-> Brain proposes. Court authorizes. Executors act. Receipts remember.
+This map shows responsibility, not unrestricted call access. Every layer remains bounded by its own contracts.
 
-No public component should bypass the Runtime authority path to reach hardware, files, shell commands, relays, CAN writers, actuators, steering, throttle, braking, locks, lighting, or other physical systems.
+## The Main Repositories
 
----
+### [`velvet-docs`](https://github.com/Velvet-ecosystem/velvet-docs)
 
-## Public Repository Set
+The canonical public front door for Velvet doctrine, architecture, ecosystem maps, contributor paths, deployment notes, and newcomer guidance.
 
-### `velvet-docs`
+### [`velvet-ai-core`](https://github.com/Velvet-ecosystem/velvet-ai-core)
 
-Canonical public front door for Velvet doctrine, architecture, repository orientation, contributor paths, deployment notes, and newcomer guidance.
+Unified-Organ doctrine, identity concepts, reasoning, memory abstractions, and structured proposals.
 
-https://github.com/Velvet-ecosystem/velvet-docs
+AI Core may interpret, remember, explain, and propose. It does not authorize or execute physical action.
 
----
+### [`velvet-runtime`](https://github.com/Velvet-ecosystem/velvet-runtime)
 
-### `velvet-ai-core`
+Verified identity context, Court policy, execution contracts, resource coordination, safety gates, replay protection, approved executors, and canonical execution receipts.
 
-Cognition-facing foundation for doctrine, proposal models, identity and naming concepts, memory and conversational abstractions, handmaiden coordination concepts, and shared schemas.
+Runtime is the sole public authority path for write-capable or physical action.
 
-Core proposes and models. It is not the authoritative boot or execution runtime.
+### [`velvet-interface`](https://github.com/Velvet-ecosystem/velvet-interface)
 
-https://github.com/Velvet-ecosystem/velvet-ai-core
+Living spaces, ambient presence, image-first scenes, contextual controls, and human-facing presentation.
 
----
+Velvet's interface is a house, not a dashboard. It presents state and routes intent; it does not directly control hardware.
 
-### `velvet-runtime`
+### [`velvet-event-protocol`](https://github.com/Velvet-ecosystem/velvet-event-protocol)
 
-Local bootstrap, identity verification, authorization, safety gate, approved executor, replay protection, and execution-receipt wiring.
+Velvet's nervous system: versioned event schemas, hardened local message delivery, and shared communication contracts.
 
-Runtime is the sole public authority path for physical or write-capable action. Current public capabilities are intentionally conservative and read-only unless explicitly documented otherwise.
+Modules connect to the nervous system. They do not wire directly into other organs. Events communicate; they do not authorize.
 
-https://github.com/Velvet-ecosystem/velvet-runtime
+### [`velvet-receipts`](https://github.com/Velvet-ecosystem/velvet-receipts)
 
----
-
-### `velvet-interface`
-
-Scene, surface, widget, and router contracts for multi-surface presentation and intent routing.
-
-Interfaces express state and request approved routes. They do not directly actuate hardware.
-
-https://github.com/Velvet-ecosystem/velvet-interface
-
----
-
-### `velvet-vehicle-can`
-
-Receive-only CAN observation, vehicle fingerprinting, signal discovery, conservative decoding, and vehicle profile foundations.
-
-CAN-discovered activity is observation, not permission. Write-capable behavior requires separate policy, safety gates, approved executors, and receipts.
-
-https://github.com/Velvet-ecosystem/velvet-vehicle-can
-
----
-
-### `velvet-event-protocol`
-
-Structured local event schemas, source enforcement, receipt-aware delivery, and request/result transport boundaries.
-
-Events describe. They do not authorize.
-
-https://github.com/Velvet-ecosystem/velvet-event-protocol
-
----
-
-### `velvet-receipts`
-
-Tamper-evident, hash-chained, policy-bound decision and execution records for accountability, auditability, and continuity.
+Append-only evidence, accountability, hash-chain integrity, and truth-preserving outcome records.
 
 A receipt is evidence, not permission.
 
-https://github.com/Velvet-ecosystem/velvet-receipts
+### [`velvet-continuity-spine`](https://github.com/Velvet-ecosystem/velvet-continuity-spine)
 
----
+Riven, Velvet's local-first continuity and verified-history spine: genesis identity, lineage, successor evolution, binding, drift, recovery, and proof.
 
-### `velvet-continuity-spine`
+Memory may inform identity. Memory alone does not prove identity.
 
-Local-first identity, lineage, drift, surface binding, and receipt-compatible continuity records.
+### [`velvet-vehicle-can`](https://github.com/Velvet-ecosystem/velvet-vehicle-can)
 
-Continuity verifies identity and history. It does not grant authority.
+Passive CAN observation, decoding, fingerprinting, vehicle profiles, qualification evidence, and Ghost replay.
 
-https://github.com/Velvet-ecosystem/velvet-continuity-spine
+Observation is not permission. Current public CAN transmission authority is none.
 
----
+## Pluggable Modules
 
-## Development Disclosure Boundary
+Velvet's stable main system should remain intentionally bounded. New capabilities arrive as modules above that foundation rather than forks that rewrite the body.
 
-Velvet includes additional private research and build tracks that are not public-facing yet. Public documentation may describe broad future directions, but private repository names, internal implementation details, unreleased safety work, private research subjects, and experimental bodies stay out of public docs until explicit disclosure is approved.
+A module may contribute observations, scenes, widgets, structured proposals, bounded services, or executor candidates after qualification. Installation alone grants no authority.
 
-The public project should show the foundation honestly: a large local-first system is being built, and early users or contributors can begin from the public docs, tests, read-only Runtime paths, receipts, interface contracts, and conservative vehicle observation.
+A dedicated public Modules repository is planned. Until it exists, reusable module candidates begin through the contribution pathway in [`velvet-docs`](https://github.com/Velvet-ecosystem/velvet-docs).
 
----
+## Named Organs
 
-## Design Principles
+Current and planned specialties include:
 
-Velvet is built to be:
+- **Velvet**: unified body identity and primary presence
+- **Velour**: librarian, receipts, archives, continuity library, and history
+- **Charlotte**: driving and minimal-risk-stop specialty
+- **Temperance**: medical guardian and emergency assessment
+- **Ruby**: engine, ECU, and diagnostics specialty
+- **Jade**: cabin, climate, comfort, and air quality
+- **Sarah**: security, trust boundaries, and sentinel space
+- **Riven**: continuity, lineage, drift, and verified history
 
-- offline-first
-- local-API-first
-- modular by design
-- boundary-driven
-- inspectable and auditable
-- governance-aware
-- receipt-preserving
-- graceful under missing optional hardware
+A name never grants authority. Every organ remains subject to the same body context, Court policy, safety, execution, and receipt laws.
 
-Velvet intentionally avoids the typical cloud-AI architecture model.
+## Rebellion Against OEM
 
-Velvet is not:
+Velvet is built around a people-owned alternative to sealed, cloud-dependent, vendor-controlled intelligence.
 
-- a chatbot wrapper
-- a SaaS AI service
-- a cloud-dependent runtime
-- a packaged consumer AI product
-- a direct hardware-control shortcut
+- API does not mean internet.
+- Stronger hardware adds capability, not legitimacy.
+- Missing optional capability should degrade locally, not invalidate the bounded core.
+- Ordinary builders should be able to use accessible parts and replaceable contracts.
+- Private identity material, personal archives, medical data, credentials, and owner-specific policy remain private.
 
-Velvet is infrastructure for long-lived intelligent systems.
+This is rebellion against OEM lock-in, not rebellion against safety.
 
----
+## Current Public Boundary
 
-## Intended Direction
+**Current public physical authority: none.**
 
-Over time, the public Velvet ecosystem will expand carefully through documented, tested, safety-gated releases.
+The public ecosystem contains contracts, read-only observation paths, synthetic Ghost demonstrations, bounded Runtime foundations, receipts, continuity records, interface contracts, and documentation.
 
-Public releases remain incremental, architectural, and transparent. New capabilities should become public only when their authority, privacy, safety, receipt, and contributor boundaries are ready.
-
----
+Physical deployment requires separate local provisioning, hardware qualification, policy review, and explicit safety validation.
 
 ## License
 
@@ -169,6 +145,4 @@ Core infrastructure components are released under GPLv3.
 
 ---
 
-> Velvet does not forget. Every decision, every action, and every state change that matters should be traceable, inspectable, and understood.
->
-> If intelligence exists inside the machine, it cannot hide behind the cloud. Velvet makes that visible.
+**Velvet is not a collection of repositories pretending to be a person. She is one local-first body whose repositories own bounded responsibilities within the whole.**
