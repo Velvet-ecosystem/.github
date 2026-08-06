@@ -8,6 +8,36 @@ Velvet is not a chatbot wrapper, a cloud service, or a dashboard glued to an API
 
 > Brain and organs propose. Runtime verifies and coordinates. Court authorizes. Executors act. Receipts remember. Riven preserves lineage.
 
+## Where Velvet Began
+
+Velvet began as an idea for a **smart car stereo in an ordinary vehicle**.
+
+**KITT** provided the original experiential reference: an intelligent presence that felt native to the car. **comma.ai / openpilot** provided practical retrofit proof that meaningful vehicle intelligence could be added outside a traditional OEM program.
+
+A parallel founding branch, **Velvet Coin and Drive-Fi**, explored owner-held value, participation, attention, safety, evidence, wallets, and accountable reward. The coin remains live outside Velvet's operational architecture, but integration was deliberately deferred until identity, receipts, authority, continuity, trust, and anti-gaming foundations were strong enough to support value honestly.
+
+```text
+KITT + comma.ai / openpilot
+        -> smart stereo
+        -> embodied retrofit intelligence
+
+Velvet Coin + Drive-Fi
+        -> ownership + accountable participation
+        -> deferred economic branch
+
+both roots
+        -> today's local-first Unified-Organ AI ecosystem
+```
+
+The coin is acknowledged as historically foundational, not as an active Runtime dependency, current reward system, or promise of financial value.
+
+Read the deeper records in:
+
+- [Smart Stereo Origin Lineage](https://github.com/Velvet-ecosystem/velvet-docs/blob/main/docs/research/smart_stereo_origin_lineage.md)
+- [Velvet Coin and Drive-Fi Origin Lineage](https://github.com/Velvet-ecosystem/velvet-docs/blob/main/docs/research/velvet_coin_drivefi_origin_lineage.md)
+- [Research Translation and Provenance Archive](https://github.com/Velvet-ecosystem/velvet-docs/blob/main/docs/research/README.md)
+- [Velvet Docs Front Door](https://github.com/Velvet-ecosystem/velvet-docs)
+
 ## What Velvet Is
 
 Velvet began in the vehicle domain, where unreliable connectivity, physical risk, local override, deterministic behavior, and hardware boundaries cannot be hand-waved away.
