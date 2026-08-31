@@ -29,6 +29,8 @@ both roots
         -> today's local-first Unified-Organ AI ecosystem
 ```
 
+The coin is acknowledged as historically foundational, not as an active Runtime dependency, current reward system, or promise of financial value.
+
 Read the deeper records in:
 
 - [Smart Stereo Origin Lineage](https://github.com/Velvet-ecosystem/velvet-docs/blob/main/docs/research/smart_stereo_origin_lineage.md)
