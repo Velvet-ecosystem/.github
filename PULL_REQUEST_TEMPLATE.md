@@ -12,9 +12,22 @@ List the repositories, files, modules, surfaces, contracts, or docs intentionall
 - [ ] No unrelated files changed.
 - [ ] Public/private boundary checked.
 - [ ] New dependencies are necessary and documented.
+- [ ] Repository CI workflow / baseline test command was inspected.
+- [ ] New or changed tests use the framework and dependencies that CI actually installs.
 - [ ] Tests, fixtures, screenshots, hardware evidence, or validation notes are included where practical.
 - [ ] Failure and degraded behavior are described truthfully.
 - [ ] Docs/examples are updated when contracts or behavior changed.
+
+## Test-runner spot check
+
+State the exact test command or workflow used by this repository, especially when tests changed.
+
+- CI / baseline command:
+- Test framework expected by CI:
+- New test imports/dependencies checked for framework drift: yes / no / not applicable
+- Any intentional runner/dependency change included in this PR: yes / no
+
+Do not assume all Velvet repositories use the same test framework. The repository's active CI workflow is the source of truth unless this pull request intentionally and completely changes that contract.
 
 ## Authority and safety boundary
 
