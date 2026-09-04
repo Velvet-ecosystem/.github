@@ -54,6 +54,22 @@ Use this flow unless a repository documents a stricter one:
 
 Branches are proposals. Pull requests are the review table. `main` is the remembered state of the ecosystem.
 
+## Test-runner baseline spot check
+
+Before opening or merging any pull request that adds, removes, or changes tests, inspect that repository's actual CI workflow and identify the exact baseline test command and installed test dependencies.
+
+Do not assume every Velvet repository uses the same framework. Some repositories use `unittest`, some may legitimately use `pytest`, and a repository's current CI workflow is the source of truth unless its documented contract is intentionally being changed in the same pull request.
+
+The pre-review spot check is:
+
+1. Read the repository's active CI workflow or documented baseline test command.
+2. Confirm new or edited tests are compatible with that runner.
+3. Check imports for accidental framework drift, especially `pytest` imports in repositories whose CI installs only the core package and runs `python -m unittest discover`.
+4. Run, or explicitly verify against, the same command CI will run rather than a different local convenience command.
+5. If changing the test framework or dependencies intentionally, update CI, dependency metadata, and contributor documentation together in the same reviewed change.
+
+A test file that works only under a locally installed but undeclared framework is a CI failure waiting to hatch. Catch it during the spot check, not after the matrix starts.
+
 ## Pre-review checklist
 
 Before merge, reviewers should ask:
@@ -62,7 +78,7 @@ Before merge, reviewers should ask:
 - Did unrelated files change?
 - Does this alter authority, permissions, hardware access, CAN behavior, shell/file access, package loading, networking, identity, privacy, safety, emergency behavior, continuity, receipts, or Runtime/Court boundaries?
 - Are new dependencies necessary, bounded, and documented?
-- Are failure modes and degraded behavior truthful?
+- Was the repository's actual CI test runner and dependency set spot-checked against every new or changed test?
 - Are tests or validation evidence present where practical?
 - Are docs and examples updated when contracts or behavior changed?
 - Does the change preserve local-first and owner-controlled operation?
