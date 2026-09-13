@@ -85,11 +85,27 @@ approved cross-body payload
 
 provenance-aware knowledge
         -> Velour's Library
-        -> retrieval evidence for reasoning
+        -> canonical catalog / retrieval evidence
+        -> read-only Interface presentation or Core reasoning
         -> never automatic belief or authority
 ```
 
 This map shows responsibility, not unrestricted call access.
+
+## Current Local Knowledge and Workspace Surfaces
+
+Velvet's public Interface has moved beyond static room presentation into bounded, trusted workspaces without turning the UI into an authority source.
+
+The current **Library Reader** is a read-only, Scroll-backed surface that prefers Velour's canonical catalog metadata when available. It can present inert local HTML, direct text-family content, derived PDF/EPUB text, and a ZIM/Kiwix handoff while rejecting paths that escape the configured vault root. It does not execute scripts, silently open external links, mutate the canonical source/catalog, or grant trust or authority.
+
+The current **Character Foundry** is registered in the Founder launcher as a trusted workspace over its canonical backend. It can prepare and edit authority-free candidates, but it cannot grant capabilities, mint Court tokens, certify lineage, write canonical memory, automatically merge/deploy, or actuate hardware.
+
+Two UI placement boundaries remain deliberately unfinished rather than guessed:
+
+- the Library Reader's reusable registration helper is merged, but the final main Founder-launcher registration call and permanent Archive-room hotspot are still follow-on work;
+- Character Foundry is registered, but its permanent Forge-room hotspot remains an on-device placement task.
+
+The canonical cross-repository path and deployment boundaries are documented in [Library, Vault, and Reader Path](https://github.com/Velvet-ecosystem/velvet-docs/blob/main/docs/library_vault_and_reader_path.md).
 
 ## Current Emergency Continuity Spine
 
@@ -117,7 +133,7 @@ Current public emergency work reaches Court authorization for bounded logical vi
 ## The Main Public Repositories
 
 ### [`velvet-docs`](https://github.com/Velvet-ecosystem/velvet-docs)
-Canonical public front door for Velvet doctrine, architecture, ecosystem maps, contributor paths, deployment notes, and newcomer guidance.
+Canonical public front door for Velvet doctrine, architecture, ecosystem maps, contributor paths, deployment notes, newcomer guidance, and the cross-repository Library/Vault/Reader path.
 
 ### [`velvet-ai-core`](https://github.com/Velvet-ecosystem/velvet-ai-core)
 Unified-Organ doctrine, reasoning, memory primitives, belief/context handling, reflection, learning boundaries, and structured proposals. Core may interpret and propose; it does not authorize physical action.
@@ -140,10 +156,10 @@ Developmental meaning-before-speech language organ. It turns verified meaning in
 Local multichannel capture, Vosk transcription, Piper speech synthesis, channel leases, priority/preemption, speaker routing, and output evidence. Software contracts are implemented; final Raspberry Pi + Audio Injector Octo hardware acceptance remains in progress.
 
 ### [`velours_library`](https://github.com/Velvet-ecosystem/velours_library)
-Velour's canonical local-first, provenance-aware knowledge archive: guarded ingestion, source lifecycle, retrieval evidence, portable knowledge packs, quarantine, adoption, and provenance. Retrieval is evidence, not belief.
+Velour's canonical local-first, provenance-aware knowledge archive: guarded ingestion, source lifecycle, retrieval evidence, portable knowledge packs, quarantine, adoption, and provenance. Retrieval is evidence, not belief. The public Interface may present catalog entries without replacing Library ownership or provenance.
 
 ### [`velvet-interface`](https://github.com/Velvet-ecosystem/velvet-interface)
-Living spaces, image-first scenes, ambient presence, contextual controls, and human-facing presentation. The Interface presents state and routes intent; it does not directly control hardware.
+Living spaces, image-first scenes, ambient presence, contextual controls, trusted workspace surfaces, and human-facing presentation. Current public work includes the registered Character Foundry workspace plus the read-only catalog-backed Library Reader implementation. The Interface presents state and routes intent; it does not directly control hardware.
 
 ### [`velvet-receipts`](https://github.com/Velvet-ecosystem/velvet-receipts)
 Append-only evidence, accountability, integrity, and truth-preserving outcome records. A receipt is evidence, not permission.
@@ -214,6 +230,10 @@ This is rebellion against OEM lock-in, not rebellion against safety.
 **Current public physical authority: none.**
 
 The public ecosystem now includes mature local event, reasoning, language, audio, communications, knowledge, continuity, receipt, interface, CAN-observation, and Runtime/Court foundations. Runtime can make bounded logical Court decisions, including incident-scoped emergency authorization, but the public ecosystem does not claim production vehicle actuation.
+
+Public Interface code can present Character Foundry and Library Reader workspaces without granting either one authority. The Library Reader's final main Founder-launcher registration call and Archive hotspot are not yet claimed complete. Luckfox first-wake commissioning also remains unproven on target hardware; a conservative Runtime bootstrap is still under review rather than merged production deployment.
+
+The September 2026 post-merge compatibility record remains frozen to the exact source composition it names. Newer Interface and library-tooling changes are not retroactively covered simply because their individual CI is green.
 
 Physical deployment still requires separate local provisioning, hardware qualification, policy review, executor binding, safety validation, and measured physical feedback.
 
